@@ -21,11 +21,11 @@ void HumanoideManager::setHumanoideLista(const vector<Humanoide *> &humanoideLis
     HumanoideManager::humanoideLista = humanoideLista;
 }
 
-string HumanoideManager::retornaSoloAliens() {
+string HumanoideManager::retornaSoloAliens() const {
     stringstream ss;
     for(auto &alien : getHumanoideLista()) {
         if(dynamic_cast<Alien*>(alien)){
-        ss <<  alien->toString() << "---";
+        ss << alien->toString() << endl;
     }}
     return ss.str();
 }

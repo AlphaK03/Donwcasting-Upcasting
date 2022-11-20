@@ -22,7 +22,7 @@ public:
 
     void ingresarHumanoide(Humanoide*);
 
-    string retornaSoloAliens();
+    string retornaSoloAliens() const;
 };
 
 

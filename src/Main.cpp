@@ -5,11 +5,8 @@
 #include "HumanoideManager.h"
 #include "Alien.h"
 #include "Depredador.h"
-#include "Monster.h"
 
 int main(){
-    printf("Hola Mundo");
-
     Alien alien("Alien1", 200, 24, 10);
     Alien alien1("Alien2", 200, 23, 34);
     Alien alien2("Alien3", 200, 25, 45);
@@ -24,9 +21,6 @@ int main(){
     humanoideManager.ingresarHumanoide(&alien2);
     humanoideManager.ingresarHumanoide(&depredador1);
     humanoideManager.ingresarHumanoide(&depredador2);
-
-
-    Monster monster;
 
 
     cout << humanoideManager.retornaSoloAliens();
